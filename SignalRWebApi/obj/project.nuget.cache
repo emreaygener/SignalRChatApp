@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "//UN8UAKjsb2T68FujTY++OpZg5puS35TOCdnR3O3ji6nJVc57GvzcBy+SiUnKDZcbSyf3Plqt+vsIuMxLWPWA==",
+  "dgSpecHash": "bFYEnT/+CVtcE0GIvIuV9rA/Ay8au2EAZI7dZ8/DNjcxBMlKPI1lU2IxnQXFeXGdKkoxRh7RdaU/FGpJnENkUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emre Aygener\\Desktop\\Development\\SignalRChatApp\\signalrwebapi\\SignalRWebApi.csproj",
+  "projectFilePath": "C:\\Users\\Emre Aygener\\desktop\\development\\SignalRChatApp\\SignalRWebApi\\SignalRWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emre Aygener\\.nuget\\packages\\jquery\\1.6.4\\jquery.1.6.4.nupkg.sha512",
     "C:\\Users\\Emre Aygener\\.nuget\\packages\\microsoft.aspnet.signalr\\2.4.3\\microsoft.aspnet.signalr.2.4.3.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emre Aygener\\Desktop\\Development\\SignalRChatApp\\signalrwebapi\\SignalRWebApi.csproj": {}
+    "C:\\Users\\Emre Aygener\\desktop\\development\\SignalRChatApp\\SignalRWebApi\\SignalRWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emre Aygener\\Desktop\\Development\\SignalRChatApp\\signalrwebapi\\SignalRWebApi.csproj": {
+    "C:\\Users\\Emre Aygener\\desktop\\development\\SignalRChatApp\\SignalRWebApi\\SignalRWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emre Aygener\\Desktop\\Development\\SignalRChatApp\\signalrwebapi\\SignalRWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Emre Aygener\\desktop\\development\\SignalRChatApp\\SignalRWebApi\\SignalRWebApi.csproj",
         "projectName": "SignalRWebApi",
-        "projectPath": "C:\\Users\\Emre Aygener\\Desktop\\Development\\SignalRChatApp\\signalrwebapi\\SignalRWebApi.csproj",
+        "projectPath": "C:\\Users\\Emre Aygener\\desktop\\development\\SignalRChatApp\\SignalRWebApi\\SignalRWebApi.csproj",
         "packagesPath": "C:\\Users\\Emre Aygener\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emre Aygener\\Desktop\\Development\\SignalRChatApp\\signalrwebapi\\obj\\",
+        "outputPath": "C:\\Users\\Emre Aygener\\desktop\\development\\SignalRChatApp\\SignalRWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

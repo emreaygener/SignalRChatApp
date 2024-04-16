@@ -3,10 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import WaitingRoom from "./components/WaitingRoom";
 import { HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ChatRoom from "./components/ChatRoom";
 
 function App() {
   const [connection, setConnection] = useState(null);
+  const [messages, setMessages] = useState([]);
 
   const joinChatRoom = async (username, chatRoom) => {
     try {
@@ -17,6 +19,11 @@ function App() {
 
       connection.on("JoinSpecificChatRoom", (username, msg) => {
         console.log(`${msg}`);
+        setMessages((messages) => [...messages, { username, msg }]);
+      });
+
+      connection.on("ReceiveSpecificMessage", (username, msg) => {
+        setMessages((messages) => [...messages, { username, msg }]);
       });
 
       await connection.start();
@@ -24,6 +31,23 @@ function App() {
       connection.invoke("JoinSpecificChatRoom", { username, chatRoom });
 
       setConnection(connection);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const sendMessage = async (message) => {
+    try {
+      await connection.invoke("SendMessage", message);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const leaveChatRoom = async () => {
+    try {
+      await connection.stop();
+      setConnection(null);
     } catch (e) {
       console.log(e);
     }
@@ -41,7 +65,15 @@ function App() {
               </h1>
             </Col>
           </Row>
-          <WaitingRoom joinChatRoom={joinChatRoom}></WaitingRoom>
+          {!connection ? (
+            <WaitingRoom joinChatRoom={joinChatRoom}></WaitingRoom>
+          ) : (
+            <ChatRoom
+              messages={messages}
+              sendMessage={sendMessage}
+              leaveChatRoom={leaveChatRoom}
+            ></ChatRoom>
+          )}
         </Container>
       </main>
     </div>
